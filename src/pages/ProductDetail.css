@@ -1,0 +1,204 @@
+.product-detail-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 48px 32px;
+}
+
+.back-button {
+  padding: 12px 24px;
+  margin-bottom: 32px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #667eea;
+  background-color: white;
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 48px;
+  background: white;
+  padding: 48px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f3f4f6;
+}
+
+.product-detail-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.product-detail-image img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-detail-info h1 {
+  margin: 0 0 24px 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+}
+
+.product-brands {
+  font-size: 17px;
+  color: #6b7280;
+  margin-bottom: 32px;
+}
+
+.product-section {
+  margin-bottom: 40px;
+}
+
+.product-section h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.product-section p {
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.ingredients-text {
+  text-align: justify;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.nutrition-table td:first-child {
+  font-weight: 600;
+  color: #374151;
+  width: 40%;
+  font-size: 15px;
+}
+
+.nutrition-table td:last-child {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.grade-badge-large {
+  display: inline-block;
+  padding: 16px 40px;
+  font-size: 36px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.grade-a {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.grade-b {
+  background: linear-gradient(135deg, #84cc16 0%, #65a30d 100%);
+}
+
+.grade-c {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.grade-d {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+}
+
+.grade-e {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.grade-unknown {
+  background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+}
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.label-tag {
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #e0e7ff 0%, #ddd6fe 100%);
+  color: #5b21b6;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.no-product {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.no-product h2 {
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  font-size: 28px;
+}
+
+.no-product p {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.add-to-cart-btn-large {
+  width: 100%;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.add-to-cart-btn-large:hover {
+  opacity: 0.9;
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+.add-to-cart-btn-large.in-cart {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 20px;
+  }
+
+  .product-detail-info h1 {
+    font-size: 24px;
+  }
+
+  .grade-badge-large {
+    font-size: 24px;
+    padding: 8px 24px;
+  }
+}
